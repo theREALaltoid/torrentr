@@ -1,31 +1,8 @@
-# React Authentication Example
+Helps Remind You When New Versions of Linux Distributions are Released to Torrent.
 
-This is an example application I created to showcase how to implement authentication on a web application using React and react-router on the frontend and node.js, express, mongodb, and mongoose on the backend.
+****The Values in JSON Files are Placeholders. Do NOT delete these values. They will be automatically Replaced.****  
 
-The [associated blog post](https://medium.com/@faizanv/authentication-for-your-react-and-express-application-w-json-web-tokens-923515826e0) for this example can be found [here](https://medium.com/@faizanv/authentication-for-your-react-and-express-application-w-json-web-tokens-923515826e0).
+Get Your Number, AuthID, and authToken from Twilio here: https://www.twilio.com/
+Instructions for the Usage of the Twilio NPM Package can be found here: https://www.twilio.com/docs/libraries/node
 
-To run the application first clone the repository
-```
-git clone https://github.com/faizanv/react-auth-example.git
-```
-
-Install the dependencies
-```
-npm install
-```
-Make sure that MongoDB is running
-```
-mongod
-```
-run the server
-```
-npm run server
-```
-and then in a separate window/tab run the frontend
-```
-npm start
-```
-The application should be running at [http://localhost:3000/](http://localhost:3000/)
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-You can find the most recent version of their guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+To run the Script just run  npm install and then `npm start` in the project directory.
