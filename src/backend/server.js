@@ -69,12 +69,6 @@ app.patch('/api/urls', withAuth, function(req, res) {
 
 });
 
-app.get('/api/settings', withAuth, function(req, res) {
-  res.send('The password is potato');
-});
-app.get('/api/data', withAuth, function(req, res) {
-  res.json(config);
-});
 
 app.post('/api/data', function(req, res) {
   fs.writeFile("./src/data.json", JSON.stringify(req.body), 'utf8', function (err) {
@@ -104,7 +98,12 @@ app.post('/api/register', function(req, res) {
   });
 });
 
-
+app.get('/api/settings', withAuth, function(req, res) {
+  User.findById(req.signedCookies.userID)
+  .then(user =>{
+ res.send(user);
+  })
+});
 
 app.put('/api/settings', function(req, res) {
     User.findByIdAndUpdate(req.signedCookies.userID, {$set:req.body}, function(err, result){
@@ -116,14 +115,6 @@ app.put('/api/settings', function(req, res) {
 
   fs.writeFileSync('../jsonData/settings.json', JSON.stringify(req.body));
     });
-
-app.get('/api/settings', function(req, res){
-  User.findById(req.signedCookies.userID)
-  .then(user =>{
- res.send(user);
-  })
-});
-
 
 app.post('/api/authenticate', function(req, res) {
   const { username, password } = req.body;
