@@ -31,6 +31,7 @@
   },
   "scripts": {
     "start": "concurrently \"cd src/backend && node server.js\" \"cd src/backend && node update.js\" \"sudo mongod\"",
+    "pi-start": "concurrently \"cd src/backend && node server.js\" \"cd src/backend && node update.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
