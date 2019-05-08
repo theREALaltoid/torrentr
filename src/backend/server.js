@@ -70,18 +70,6 @@ app.patch('/api/urls', withAuth, function(req, res) {
 });
 
 
-app.post('/api/data', function(req, res) {
-  fs.writeFile("./src/data.json", JSON.stringify(req.body), 'utf8', function (err) {
-      if (err) {
-          return console.log(err);
-      }
-      else{
-      res.status(200).send("cool");
-      console.log("The file was saved!");
-  }
-
-  });
-});
 
 
 app.post('/api/register', function(req, res) {

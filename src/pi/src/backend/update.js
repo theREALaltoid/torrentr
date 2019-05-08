@@ -4,8 +4,8 @@ const xmlQuery = require("xml-query");
 var parseString = require("xml2js").parseString;
 var schedule = require("node-schedule");
 var fs = require("fs");
-var urls = require("./../jsonData/urls.json");
-var config = require('../jsonData/settings');
+var urls = require("../../jsonData/urls");
+var config = require('../../jsonData/values');
 
 schedule.scheduleJob("1 * * * * *", function() {
   var newRelease = [];

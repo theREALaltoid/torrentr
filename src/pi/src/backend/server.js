@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 var fs = require("fs");
 const app = express();
 var urls = require('../jsonData/urls')
+
 var settings = require('../jsonData/settings');
 
 
@@ -26,7 +27,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/api/urls',   function(req, res) {
-  res.json(urls.urls[0]);
+  res.json(urls);
 });
 
 app.patch('/api/urls',   function(req, res) {
@@ -47,20 +48,6 @@ app.get('/api/settings', function(req, res) {
 res.json(settings);
 });
 */
-
-app.post('/api/data', function(req, res) {
-  fs.writeFile("./src/data.json", JSON.stringify(req.body), 'utf8', function (err) {
-      if (err) {
-          return console.log(err);
-      }
-      else{
-      res.status(200);
-      console.log("The file was saved!");
-  }
-
-  });
-});
-
 
 
 app.put('/api/settings', function(req, res) {
