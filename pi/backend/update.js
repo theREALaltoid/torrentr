@@ -6,7 +6,7 @@ var schedule = require("node-schedule");
 var fs = require("fs");
 var urls = require("../jsonData/urls");
 var config = require("../jsonData/settings");
-console.log(config);
+
 schedule.scheduleJob("1 * * * * *", function() {
   var newRelease = [];
   var oldRelease = fs.readFileSync("../jsonData/values.json");
@@ -17,6 +17,8 @@ schedule.scheduleJob("1 * * * * *", function() {
   Promise.all(promises).then(data => {
     mainFunction(data);
   });
+
+  //Taking URL Data From The Promise Above and Cheacking For New Releases
 
   var mainFunction = function mainFunction(data) {
     for (var i = 0; i < data.length; i++) {

@@ -32,7 +32,7 @@
     "xml2js": "^0.4.19"
   },
   "scripts": {
-    "start": "concurrently \"cd src/backend && node server.js\" \"cd src/backend && node update.js\" \"sudo mongod\"",
+    "start": "concurrently \"sudo mongod\" \"cd src/backend && node server.js\" \"cd src/backend && node update.js\" ",
     "pi-start": "concurrently \"cd pi/backend && node server.js\" \"cd pi/backend && node update.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

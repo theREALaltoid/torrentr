@@ -18,6 +18,8 @@ schedule.scheduleJob("1 * * * * *", function() {
     mainFunction(data);
   });
 
+  //Taking URL Data From The Promise Above and Cheacking For New Releases
+
   var mainFunction = function mainFunction(data) {
     for (var i = 0; i < data.length; i++) {
       parseString(data[i], function(err, result) {
