@@ -1,0 +1,3257 @@
+{
+  "id": "i3jq",
+  "dependencies": [
+    {
+      "name": "/home/zach/github/torrentr/.babelrc",
+      "includedInParent": true,
+      "mtime": 1556437238995
+    },
+    {
+      "name": "/home/zach/github/torrentr/package.json",
+      "includedInParent": true,
+      "mtime": 1558808566892
+    },
+    {
+      "name": "react",
+      "loc": { "line": 1, "column": 18 },
+      "parent": "/home/zach/github/torrentr/src/frontend/URLSettings.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/react/index.js"
+    },
+    {
+      "name": "prop-types",
+      "loc": { "line": 2, "column": 22 },
+      "parent": "/home/zach/github/torrentr/src/frontend/URLSettings.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/prop-types/index.js"
+    },
+    {
+      "name": "./checkboxesData",
+      "loc": { "line": 3, "column": 23 },
+      "parent": "/home/zach/github/torrentr/src/frontend/URLSettings.jsx",
+      "resolved": "/home/zach/github/torrentr/src/frontend/checkboxesData.js"
+    },
+    {
+      "name": "./checkboxTemplate",
+      "loc": { "line": 4, "column": 21 },
+      "parent": "/home/zach/github/torrentr/src/frontend/URLSettings.jsx",
+      "resolved": "/home/zach/github/torrentr/src/frontend/checkboxTemplate.js"
+    },
+    {
+      "name": "react-dom",
+      "loc": { "line": 5, "column": 23 },
+      "parent": "/home/zach/github/torrentr/src/frontend/URLSettings.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/react-dom/index.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";Object.defineProperty(exports,\"__esModule\",{value:!0}),exports.default=void 0;var e=a(require(\"react\")),t=a(require(\"prop-types\")),r=a(require(\"./checkboxesData\")),n=a(require(\"./checkboxTemplate\"));function a(e){return e&&e.__esModule?e:{default:e}}function o(e){return(o=\"function\"==typeof Symbol&&\"symbol\"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&\"function\"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?\"symbol\":typeof e})(e)}function u(e){return i(e)||c(e)||l()}function l(){throw new TypeError(\"Invalid attempt to spread non-iterable instance\")}function c(e){if(Symbol.iterator in Object(e)||\"[object Arguments]\"===Object.prototype.toString.call(e))return Array.from(e)}function i(e){if(Array.isArray(e)){for(var t=0,r=new Array(e.length);t<e.length;t++)r[t]=e[t];return r}}function f(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function s(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}function p(e,t,r){return t&&s(e.prototype,t),r&&s(e,r),e}function y(e,t){return!t||\"object\"!==o(t)&&\"function\"!=typeof t?m(e):t}function d(e){return(d=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function m(e){if(void 0===e)throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");return e}function h(e,t){if(\"function\"!=typeof t&&null!==t)throw new TypeError(\"Super expression must either be null or a function\");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&b(e,t)}function b(e,t){return(b=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}var g=require(\"react-dom\"),v=[],S=function(t){function a(e){var t;if(f(this,a),t=y(this,d(a).call(this,e)),null===localStorage.getItem(\"rememberCheckStatus\"))var r=new Map;else r=new Map([].concat(u(new Map),u(new Map(JSON.parse(localStorage.rememberCheckStatus)))));return t.state={checkedItems:r},t.handleChange=t.handleChange.bind(m(t)),t}return h(a,e.default.Component),p(a,[{key:\"handleChange\",value:function(e){var t=e.target.name,r=e.target.checked,n=v.indexOf(e.target.value);this.setState(function(e){return{checkedItems:e.checkedItems.set(t,r)}}),localStorage.rememberCheckStatus=JSON.stringify(Array.from(this.state.checkedItems.entries())),r?(v.push(e.target.value),localStorage.setItem(\"urlArray\",JSON.stringify(v))):n>-1&&(v.splice(n,1),localStorage.setItem(\"urlArray\",JSON.stringify(v)))}},{key:\"save\",value:function(){var e=localStorage.getItem(\"urlArray\");e={urlArr:e},fetch(\"/api/urls\",{method:\"PATCH\",credentials:\"include\",body:JSON.stringify(e),headers:{\"Content-Type\":\"application/json\"}})}},{key:\"render\",value:function(){var t=this;return e.default.createElement(\"div\",null,e.default.createElement(\"body\",null,e.default.createElement(\"div\",{id:\"urlSettingCheckboxes\"},r.default.map(function(r){return e.default.createElement(\"label\",{key:r.key},r.name,e.default.createElement(n.default,{name:r.name,checked:t.state.checkedItems.get(r.name),onChange:t.handleChange,value:r.value}))})),e.default.createElement(\"div\",null,e.default.createElement(\"br\",null),e.default.createElement(\"input\",{id:\"button\",type:\"button\",value:\"Save URLSettings\",onClick:function(e){t.save(),t.handleChange(e)}}))))}}]),a}(),k=S;exports.default=k;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 0 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 13 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 20 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 35 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 43 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 56 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 57 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 64 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 68 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 76 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 89 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 91 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 95 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 97 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 99 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 107 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 117 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 119 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 121 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 129 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 144 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 146 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 148 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 156 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 177 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 179 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 181 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 189 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 212 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 221 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 223 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 226 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 233 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 236 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 238 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 249 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 251 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 252 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 260 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 263 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 272 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 274 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 277 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 284 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 286 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 305 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 313 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 330 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 337 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 346 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 355 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 358 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 372 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 375 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 384 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 387 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 394 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 397 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 416 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 424 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 426 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 440 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 448 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 452 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 459 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 469 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 485 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 489 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 492 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 501 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 503 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 506 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 513 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 515 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 519 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 521 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 525 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 529 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 538 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 542 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 548 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 552 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 562 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 613 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 622 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 624 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 627 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 630 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 637 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 649 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 656 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 660 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 683 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 690 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 700 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 709 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 714 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 717 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 724 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 730 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 735 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 738 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 747 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 749 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 752 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 755 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 761 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 769 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 772 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 773 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 777 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 781 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 783 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 785 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 787 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 791 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 797 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 799 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 807 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 809 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 811 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 818 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 822 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 824 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 827 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 829 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 832 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 839 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 842 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 851 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 853 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 855 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 858 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 863 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 876 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 879 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 885 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 889 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 899 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 936 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 945 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 947 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 949 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 952 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 956 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 960 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 962 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 964 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 966 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 968 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 975 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 979 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 980 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 984 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 986 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 988 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 991 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 993 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1004 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1006 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1019 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1021 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1023 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1037 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1039 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1049 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1053 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1055 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1065 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1068 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1075 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1090 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1092 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1094 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1098 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1102 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1111 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1113 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1115 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1117 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1120 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1127 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1130 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1132 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1134 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1144 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1147 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1150 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1152 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1154 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1157 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1159 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1168 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1170 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1172 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1175 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1182 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1185 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1196 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1198 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1202 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1221 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1223 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1225 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1228 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1230 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1239 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1241 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1244 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1251 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1253 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1260 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1275 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1282 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1297 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1306 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1309 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1316 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1318 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1329 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1336 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1351 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1356 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1359 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1368 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1370 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1373 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1381 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1385 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1387 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1393 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1397 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1412 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1473 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1480 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1482 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1491 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1493 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1495 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1498 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1501 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1520 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1523 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1530 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1532 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1538 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1542 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1552 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1606 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1608 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1618 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1625 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1632 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1635 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1637 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1647 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1648 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1660 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1661 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1667 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1669 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1679 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1681 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1695 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1700 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1703 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1705 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1707 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1710 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1719 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1721 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1723 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1726 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1733 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1735 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1742 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1758 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1767 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1769 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1772 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1779 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1781 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1791 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1793 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1797 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1799 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 5, "column": 0 },
+          "generated": { "line": 1, "column": 1802 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "ReactDOM",
+          "original": { "line": 5, "column": 4 },
+          "generated": { "line": 1, "column": 1806 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "require",
+          "original": { "line": 5, "column": 15 },
+          "generated": { "line": 1, "column": 1808 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 5, "column": 23 },
+          "generated": { "line": 1, "column": 1816 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 6, "column": 4 },
+          "generated": { "line": 1, "column": 1829 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 6, "column": 13 },
+          "generated": { "line": 1, "column": 1831 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 8, "column": 6 },
+          "generated": { "line": 1, "column": 1834 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1836 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 1845 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 9, "column": 14 },
+          "generated": { "line": 1, "column": 1848 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 9, "column": 14 },
+          "generated": { "line": 1, "column": 1857 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 9, "column": 14 },
+          "generated": { "line": 1, "column": 1859 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1862 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1866 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "localStorage",
+          "original": { "line": 12, "column": 8 },
+          "generated": { "line": 1, "column": 1868 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1871 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1873 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1878 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1881 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1883 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1885 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1890 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1892 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1895 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1900 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1905 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 12, "column": 56 },
+          "generated": { "line": 1, "column": 1909 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "localStorage",
+          "original": { "line": 12, "column": 8 },
+          "generated": { "line": 1, "column": 1916 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "getItem",
+          "original": { "line": 12, "column": 21 },
+          "generated": { "line": 1, "column": 1929 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 12, "column": 29 },
+          "generated": { "line": 1, "column": 1937 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkBoxState",
+          "original": { "line": 13, "column": 10 },
+          "generated": { "line": 1, "column": 1960 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkBoxState",
+          "original": { "line": 13, "column": 10 },
+          "generated": { "line": 1, "column": 1964 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 13, "column": 26 },
+          "generated": { "line": 1, "column": 1966 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "Map",
+          "original": { "line": 13, "column": 30 },
+          "generated": { "line": 1, "column": 1970 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkBoxState",
+          "original": { "line": 15, "column": 6 },
+          "generated": { "line": 1, "column": 1979 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 15, "column": 22 },
+          "generated": { "line": 1, "column": 1981 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "Map",
+          "original": { "line": 15, "column": 26 },
+          "generated": { "line": 1, "column": 1985 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 16, "column": 11 },
+          "generated": { "line": 1, "column": 1989 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 16, "column": 11 },
+          "generated": { "line": 1, "column": 1992 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 16, "column": 11 },
+          "generated": { "line": 1, "column": 1999 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 16, "column": 11 },
+          "generated": { "line": 1, "column": 2001 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "Map",
+          "original": { "line": 16, "column": 15 },
+          "generated": { "line": 1, "column": 2005 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 17, "column": 11 },
+          "generated": { "line": 1, "column": 2010 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 17, "column": 11 },
+          "generated": { "line": 1, "column": 2012 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "Map",
+          "original": { "line": 17, "column": 15 },
+          "generated": { "line": 1, "column": 2016 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "JSON",
+          "original": { "line": 17, "column": 19 },
+          "generated": { "line": 1, "column": 2020 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "parse",
+          "original": { "line": 17, "column": 24 },
+          "generated": { "line": 1, "column": 2025 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "localStorage",
+          "original": { "line": 17, "column": 30 },
+          "generated": { "line": 1, "column": 2031 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "rememberCheckStatus",
+          "original": { "line": 17, "column": 43 },
+          "generated": { "line": 1, "column": 2044 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 2069 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "state",
+          "original": { "line": 20, "column": 9 },
+          "generated": { "line": 1, "column": 2076 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "state",
+          "original": { "line": 20, "column": 9 },
+          "generated": { "line": 1, "column": 2078 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 20, "column": 17 },
+          "generated": { "line": 1, "column": 2084 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkedItems",
+          "original": { "line": 21, "column": 6 },
+          "generated": { "line": 1, "column": 2085 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkBoxState",
+          "original": { "line": 21, "column": 20 },
+          "generated": { "line": 1, "column": 2098 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "handleChange",
+          "original": { "line": 23, "column": 9 },
+          "generated": { "line": 1, "column": 2101 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "handleChange",
+          "original": { "line": 23, "column": 9 },
+          "generated": { "line": 1, "column": 2103 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 23, "column": 24 },
+          "generated": { "line": 1, "column": 2116 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "handleChange",
+          "original": { "line": 23, "column": 29 },
+          "generated": { "line": 1, "column": 2118 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "bind",
+          "original": { "line": 23, "column": 42 },
+          "generated": { "line": 1, "column": 2131 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 23, "column": 4 },
+          "generated": { "line": 1, "column": 2136 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 23, "column": 4 },
+          "generated": { "line": 1, "column": 2138 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 2142 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2144 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2151 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2153 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "React",
+          "original": { "line": 8, "column": 26 },
+          "generated": { "line": 1, "column": 2155 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 32 },
+          "generated": { "line": 1, "column": 2157 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 32 },
+          "generated": { "line": 1, "column": 2165 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2176 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2178 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2180 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2181 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2182 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2186 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 28, "column": 15 },
+          "generated": { "line": 1, "column": 2201 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 28, "column": 15 },
+          "generated": { "line": 1, "column": 2207 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 28, "column": 15 },
+          "generated": { "line": 1, "column": 2216 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 29, "column": 10 },
+          "generated": { "line": 1, "column": 2219 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 29, "column": 10 },
+          "generated": { "line": 1, "column": 2223 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 29, "column": 17 },
+          "generated": { "line": 1, "column": 2225 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "target",
+          "original": { "line": 29, "column": 19 },
+          "generated": { "line": 1, "column": 2227 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "name",
+          "original": { "line": 29, "column": 26 },
+          "generated": { "line": 1, "column": 2234 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "isChecked",
+          "original": { "line": 30, "column": 10 },
+          "generated": { "line": 1, "column": 2239 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 30, "column": 22 },
+          "generated": { "line": 1, "column": 2241 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "target",
+          "original": { "line": 30, "column": 24 },
+          "generated": { "line": 1, "column": 2243 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checked",
+          "original": { "line": 30, "column": 31 },
+          "generated": { "line": 1, "column": 2250 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "index",
+          "original": { "line": 31, "column": 8 },
+          "generated": { "line": 1, "column": 2258 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 31, "column": 16 },
+          "generated": { "line": 1, "column": 2260 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "indexOf",
+          "original": { "line": 31, "column": 23 },
+          "generated": { "line": 1, "column": 2262 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 31, "column": 31 },
+          "generated": { "line": 1, "column": 2270 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "target",
+          "original": { "line": 31, "column": 33 },
+          "generated": { "line": 1, "column": 2272 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "value",
+          "original": { "line": 31, "column": 40 },
+          "generated": { "line": 1, "column": 2279 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "setState",
+          "original": { "line": 33, "column": 9 },
+          "generated": { "line": 1, "column": 2286 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "setState",
+          "original": { "line": 33, "column": 9 },
+          "generated": { "line": 1, "column": 2291 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 33, "column": 18 },
+          "generated": { "line": 1, "column": 2300 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "prevState",
+          "original": { "line": 33, "column": 18 },
+          "generated": { "line": 1, "column": 2309 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 33, "column": 32 },
+          "generated": { "line": 1, "column": 2312 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 33, "column": 32 },
+          "generated": { "line": 1, "column": 2318 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkedItems",
+          "original": { "line": 34, "column": 6 },
+          "generated": { "line": 1, "column": 2319 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "prevState",
+          "original": { "line": 34, "column": 20 },
+          "generated": { "line": 1, "column": 2332 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkedItems",
+          "original": { "line": 34, "column": 30 },
+          "generated": { "line": 1, "column": 2334 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "set",
+          "original": { "line": 34, "column": 43 },
+          "generated": { "line": 1, "column": 2347 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 34, "column": 47 },
+          "generated": { "line": 1, "column": 2351 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "isChecked",
+          "original": { "line": 34, "column": 53 },
+          "generated": { "line": 1, "column": 2353 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "localStorage",
+          "original": { "line": 36, "column": 4 },
+          "generated": { "line": 1, "column": 2359 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "rememberCheckStatus",
+          "original": { "line": 36, "column": 17 },
+          "generated": { "line": 1, "column": 2372 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "JSON",
+          "original": { "line": 36, "column": 39 },
+          "generated": { "line": 1, "column": 2392 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "stringify",
+          "original": { "line": 36, "column": 44 },
+          "generated": { "line": 1, "column": 2397 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "Array",
+          "original": { "line": 37, "column": 6 },
+          "generated": { "line": 1, "column": 2407 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "from",
+          "original": { "line": 37, "column": 12 },
+          "generated": { "line": 1, "column": 2413 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 37, "column": 17 },
+          "generated": { "line": 1, "column": 2418 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "state",
+          "original": { "line": 37, "column": 22 },
+          "generated": { "line": 1, "column": 2423 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkedItems",
+          "original": { "line": 37, "column": 28 },
+          "generated": { "line": 1, "column": 2429 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "entries",
+          "original": { "line": 37, "column": 41 },
+          "generated": { "line": 1, "column": 2442 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "isChecked",
+          "original": { "line": 40, "column": 8 },
+          "generated": { "line": 1, "column": 2454 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 41, "column": 6 },
+          "generated": { "line": 1, "column": 2457 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "push",
+          "original": { "line": 41, "column": 13 },
+          "generated": { "line": 1, "column": 2459 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 41, "column": 18 },
+          "generated": { "line": 1, "column": 2464 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "target",
+          "original": { "line": 41, "column": 20 },
+          "generated": { "line": 1, "column": 2466 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "value",
+          "original": { "line": 41, "column": 27 },
+          "generated": { "line": 1, "column": 2473 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "localStorage",
+          "original": { "line": 42, "column": 6 },
+          "generated": { "line": 1, "column": 2480 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "setItem",
+          "original": { "line": 42, "column": 19 },
+          "generated": { "line": 1, "column": 2493 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 42, "column": 27 },
+          "generated": { "line": 1, "column": 2501 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "JSON",
+          "original": { "line": 42, "column": 39 },
+          "generated": { "line": 1, "column": 2512 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "stringify",
+          "original": { "line": 42, "column": 44 },
+          "generated": { "line": 1, "column": 2517 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 42, "column": 54 },
+          "generated": { "line": 1, "column": 2527 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "index",
+          "original": { "line": 45, "column": 13 },
+          "generated": { "line": 1, "column": 2532 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 45, "column": 22 },
+          "generated": { "line": 1, "column": 2535 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 46, "column": 6 },
+          "generated": { "line": 1, "column": 2539 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "splice",
+          "original": { "line": 46, "column": 13 },
+          "generated": { "line": 1, "column": 2541 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "index",
+          "original": { "line": 46, "column": 20 },
+          "generated": { "line": 1, "column": 2548 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 46, "column": 27 },
+          "generated": { "line": 1, "column": 2550 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "localStorage",
+          "original": { "line": 47, "column": 6 },
+          "generated": { "line": 1, "column": 2553 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "setItem",
+          "original": { "line": 47, "column": 19 },
+          "generated": { "line": 1, "column": 2566 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 47, "column": 27 },
+          "generated": { "line": 1, "column": 2574 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "JSON",
+          "original": { "line": 47, "column": 39 },
+          "generated": { "line": 1, "column": 2585 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "stringify",
+          "original": { "line": 47, "column": 44 },
+          "generated": { "line": 1, "column": 2590 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 47, "column": 54 },
+          "generated": { "line": 1, "column": 2600 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2607 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2608 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2612 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 51, "column": 9 },
+          "generated": { "line": 1, "column": 2619 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 51, "column": 9 },
+          "generated": { "line": 1, "column": 2625 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 52, "column": 8 },
+          "generated": { "line": 1, "column": 2636 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 52, "column": 8 },
+          "generated": { "line": 1, "column": 2640 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "localStorage",
+          "original": { "line": 52, "column": 17 },
+          "generated": { "line": 1, "column": 2642 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "getItem",
+          "original": { "line": 52, "column": 30 },
+          "generated": { "line": 1, "column": 2655 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 52, "column": 38 },
+          "generated": { "line": 1, "column": 2663 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 53, "column": 4 },
+          "generated": { "line": 1, "column": 2675 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 53, "column": 13 },
+          "generated": { "line": 1, "column": 2677 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 53, "column": 15 },
+          "generated": { "line": 1, "column": 2678 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 53, "column": 15 },
+          "generated": { "line": 1, "column": 2685 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "fetch",
+          "original": { "line": 54, "column": 4 },
+          "generated": { "line": 1, "column": 2688 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 54, "column": 10 },
+          "generated": { "line": 1, "column": 2694 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 54, "column": 23 },
+          "generated": { "line": 1, "column": 2706 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "method",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2707 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 55, "column": 14 },
+          "generated": { "line": 1, "column": 2714 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "credentials",
+          "original": { "line": 56, "column": 7 },
+          "generated": { "line": 1, "column": 2722 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 56, "column": 20 },
+          "generated": { "line": 1, "column": 2734 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "body",
+          "original": { "line": 57, "column": 6 },
+          "generated": { "line": 1, "column": 2744 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "JSON",
+          "original": { "line": 57, "column": 12 },
+          "generated": { "line": 1, "column": 2749 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "stringify",
+          "original": { "line": 57, "column": 17 },
+          "generated": { "line": 1, "column": 2754 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "urlArr",
+          "original": { "line": 57, "column": 27 },
+          "generated": { "line": 1, "column": 2764 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "headers",
+          "original": { "line": 58, "column": 6 },
+          "generated": { "line": 1, "column": 2767 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 58, "column": 15 },
+          "generated": { "line": 1, "column": 2775 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 59, "column": 24 },
+          "generated": { "line": 1, "column": 2776 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 59, "column": 24 },
+          "generated": { "line": 1, "column": 2791 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2815 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2816 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 2820 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 67, "column": 11 },
+          "generated": { "line": 1, "column": 2829 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 67, "column": 11 },
+          "generated": { "line": 1, "column": 2835 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 67, "column": 11 },
+          "generated": { "line": 1, "column": 2846 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 67, "column": 11 },
+          "generated": { "line": 1, "column": 2850 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 67, "column": 11 },
+          "generated": { "line": 1, "column": 2852 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 70, "column": 6 },
+          "generated": { "line": 1, "column": 2857 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 70, "column": 6 },
+          "generated": { "line": 1, "column": 2864 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 71, "column": 2 },
+          "generated": { "line": 1, "column": 2866 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 71, "column": 2 },
+          "generated": { "line": 1, "column": 2874 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 71, "column": 2 },
+          "generated": { "line": 1, "column": 2888 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 71, "column": 2 },
+          "generated": { "line": 1, "column": 2894 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 71, "column": 2 },
+          "generated": { "line": 1, "column": 2899 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2901 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2909 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2923 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2930 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2935 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2937 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2945 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2959 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 6 },
+          "generated": { "line": 1, "column": 2965 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 11 },
+          "generated": { "line": 1, "column": 2966 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 72, "column": 14 },
+          "generated": { "line": 1, "column": 2969 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkboxes",
+          "original": { "line": 73, "column": 11 },
+          "generated": { "line": 1, "column": 2993 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "map",
+          "original": { "line": 73, "column": 22 },
+          "generated": { "line": 1, "column": 2995 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "map",
+          "original": { "line": 73, "column": 22 },
+          "generated": { "line": 1, "column": 3003 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 73, "column": 26 },
+          "generated": { "line": 1, "column": 3007 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 73, "column": 26 },
+          "generated": { "line": 1, "column": 3016 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 74, "column": 12 },
+          "generated": { "line": 1, "column": 3019 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 74, "column": 12 },
+          "generated": { "line": 1, "column": 3026 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 74, "column": 12 },
+          "generated": { "line": 1, "column": 3028 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 74, "column": 12 },
+          "generated": { "line": 1, "column": 3036 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 74, "column": 12 },
+          "generated": { "line": 1, "column": 3050 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 74, "column": 12 },
+          "generated": { "line": 1, "column": 3058 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 74, "column": 19 },
+          "generated": { "line": 1, "column": 3059 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 74, "column": 24 },
+          "generated": { "line": 1, "column": 3063 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "key",
+          "original": { "line": 74, "column": 29 },
+          "generated": { "line": 1, "column": 3065 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 75, "column": 15 },
+          "generated": { "line": 1, "column": 3070 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "name",
+          "original": { "line": 75, "column": 20 },
+          "generated": { "line": 1, "column": 3072 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 76, "column": 14 },
+          "generated": { "line": 1, "column": 3077 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 76, "column": 15 },
+          "generated": { "line": 1, "column": 3079 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 76, "column": 15 },
+          "generated": { "line": 1, "column": 3087 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 76, "column": 15 },
+          "generated": { "line": 1, "column": 3101 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 76, "column": 14 },
+          "generated": { "line": 1, "column": 3103 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 76, "column": 14 },
+          "generated": { "line": 1, "column": 3111 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 77, "column": 16 },
+          "generated": { "line": 1, "column": 3112 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 77, "column": 22 },
+          "generated": { "line": 1, "column": 3117 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "name",
+          "original": { "line": 77, "column": 27 },
+          "generated": { "line": 1, "column": 3119 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 78, "column": 16 },
+          "generated": { "line": 1, "column": 3124 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 78, "column": 25 },
+          "generated": { "line": 1, "column": 3132 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "state",
+          "original": { "line": 78, "column": 30 },
+          "generated": { "line": 1, "column": 3134 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "checkedItems",
+          "original": { "line": 78, "column": 36 },
+          "generated": { "line": 1, "column": 3140 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "get",
+          "original": { "line": 78, "column": 49 },
+          "generated": { "line": 1, "column": 3153 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 78, "column": 53 },
+          "generated": { "line": 1, "column": 3157 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "name",
+          "original": { "line": 78, "column": 58 },
+          "generated": { "line": 1, "column": 3159 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 79, "column": 16 },
+          "generated": { "line": 1, "column": 3165 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 79, "column": 26 },
+          "generated": { "line": 1, "column": 3174 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "handleChange",
+          "original": { "line": 79, "column": 31 },
+          "generated": { "line": 1, "column": 3176 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 80, "column": 16 },
+          "generated": { "line": 1, "column": 3189 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "item",
+          "original": { "line": 80, "column": 23 },
+          "generated": { "line": 1, "column": 3195 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "value",
+          "original": { "line": 80, "column": 28 },
+          "generated": { "line": 1, "column": 3197 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 86, "column": 4 },
+          "generated": { "line": 1, "column": 3209 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3211 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3219 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3233 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3239 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3244 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 86, "column": 4 },
+          "generated": { "line": 1, "column": 3246 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 86, "column": 4 },
+          "generated": { "line": 1, "column": 3254 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 86, "column": 4 },
+          "generated": { "line": 1, "column": 3268 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 86, "column": 4 },
+          "generated": { "line": 1, "column": 3273 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 89, "column": 10 },
+          "generated": { "line": 1, "column": 3279 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 89, "column": 10 },
+          "generated": { "line": 1, "column": 3281 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 89, "column": 10 },
+          "generated": { "line": 1, "column": 3289 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 89, "column": 10 },
+          "generated": { "line": 1, "column": 3303 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 89, "column": 10 },
+          "generated": { "line": 1, "column": 3311 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 90, "column": 12 },
+          "generated": { "line": 1, "column": 3312 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 90, "column": 15 },
+          "generated": { "line": 1, "column": 3315 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 91, "column": 12 },
+          "generated": { "line": 1, "column": 3324 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 91, "column": 17 },
+          "generated": { "line": 1, "column": 3329 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 92, "column": 12 },
+          "generated": { "line": 1, "column": 3338 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 92, "column": 18 },
+          "generated": { "line": 1, "column": 3344 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 93, "column": 12 },
+          "generated": { "line": 1, "column": 3363 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 93, "column": 21 },
+          "generated": { "line": 1, "column": 3371 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 93, "column": 22 },
+          "generated": { "line": 1, "column": 3380 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 93, "column": 29 },
+          "generated": { "line": 1, "column": 3383 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "save",
+          "original": { "line": 93, "column": 34 },
+          "generated": { "line": 1, "column": 3385 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "original": { "line": 93, "column": 41 },
+          "generated": { "line": 1, "column": 3392 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "handleChange",
+          "original": { "line": 93, "column": 46 },
+          "generated": { "line": 1, "column": 3394 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "e",
+          "original": { "line": 93, "column": 59 },
+          "generated": { "line": 1, "column": 3407 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 3420 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 3422 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 3425 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 3427 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 3429 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 3437 }
+        },
+        {
+          "source": "URLSettings.jsx",
+          "name": "URLSettings",
+          "original": { "line": 103, "column": 15 },
+          "generated": { "line": 1, "column": 3445 }
+        }
+      ],
+      "sources": {
+        "URLSettings.jsx": "import React from \"react\";\nimport PropTypes from \"prop-types\";\nimport checkboxes from \"./checkboxesData\";\nimport Checkbox from \"./checkboxTemplate\";\nvar ReactDOM = require(\"react-dom\");\nvar urlArr = [];\n\nclass URLSettings extends React.Component {\n  constructor(props) {\n    super(props);\n//Check For Local Storage of URLSettings. Create a New Map to Store Checkbox State if there isn't a LS.\n    if (localStorage.getItem(\"rememberCheckStatus\") === null) {\n      var checkBoxState = new Map();\n    } else {\n      checkBoxState = new Map([\n        ...new Map(),\n        ...new Map(JSON.parse(localStorage.rememberCheckStatus))\n      ]);\n    }\n    this.state = {\n      checkedItems: checkBoxState\n    };\n    this.handleChange = this.handleChange.bind(this);\n  }\n\n\n  //Handle Checkbox Events\n  handleChange(e) {\n    const item = e.target.name;\n    const isChecked = e.target.checked;\n    var index = urlArr.indexOf(e.target.value);\n\n    this.setState(prevState => ({\n      checkedItems: prevState.checkedItems.set(item, isChecked)\n    }));\n    localStorage.rememberCheckStatus = JSON.stringify(\n      Array.from(this.state.checkedItems.entries())\n    );\n//If a Box is Selected We Need To Push Its URL to an Array and Push That Updated Array to LS\n    if (isChecked) {\n      urlArr.push(e.target.value);\n      localStorage.setItem(\"urlArray\", JSON.stringify(urlArr));\n    }\n//If a Box is Unselected We Need To Push Its URL to an Array and Push That Updated Array to LS\n    else if (index > -1) {\n      urlArr.splice(index, 1);\n      localStorage.setItem(\"urlArray\", JSON.stringify(urlArr));\n    }\n  }\n  //Save Our URLs to Our Server\n  save() {\n    var urlArr = localStorage.getItem(\"urlArray\");\n    urlArr = { urlArr };\n    fetch(\"/api/urls\", {\n      method: \"PATCH\",\n       credentials: 'include',\n      body: JSON.stringify(urlArr),\n      headers: {\n        \"Content-Type\": \"application/json\"\n\n      }\n    });\n\n  }\n\n\n  render() {\n    return (\n\n      <div>\n  <body>\n      <div id=\"urlSettingCheckboxes\">\n          {checkboxes.map(item => (\n            <label key={item.key}>\n              {item.name}\n              <Checkbox\n                name={item.name}\n                checked={this.state.checkedItems.get(item.name)}\n                onChange={this.handleChange}\n                value={item.value}\n              />\n            </label>\n\n          ))}\n</div>\n    <div>\n        <br />\n\n          <input\n            id=\"button\"\n            type=\"button\"\n            value=\"Save URLSettings\"\n            onClick={(e) =>{ this.save();this.handleChange(e)}}\n          />\n\n  </div>\n</body>\n        </div>\n\n    );\n  }\n}\nexport default URLSettings;\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "991de22c2301f308caaf6043cec1632c",
+  "cacheData": { "env": {} }
+}

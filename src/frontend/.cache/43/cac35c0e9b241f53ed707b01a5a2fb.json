@@ -1,0 +1,2003 @@
+{
+  "id": "YyNO",
+  "dependencies": [
+    {
+      "name": "/home/zach/github/torrentr/.babelrc",
+      "includedInParent": true,
+      "mtime": 1556437238995
+    },
+    {
+      "name": "/home/zach/github/torrentr/package.json",
+      "includedInParent": true,
+      "mtime": 1558808566892
+    },
+    {
+      "name": "react",
+      "loc": { "line": 1, "column": 33 },
+      "parent": "/home/zach/github/torrentr/src/frontend/withAuth.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/react/index.js"
+    },
+    {
+      "name": "react-router-dom",
+      "loc": { "line": 2, "column": 25 },
+      "parent": "/home/zach/github/torrentr/src/frontend/withAuth.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/react-router-dom/es/index.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";Object.defineProperty(exports,\"__esModule\",{value:!0}),exports.default=s;var e=r(require(\"react\")),t=require(\"react-router-dom\");function r(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){var n=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(e,r):{};n.get||n.set?Object.defineProperty(t,r,n):t[r]=e[r]}return t.default=e,t}function n(e){return(n=\"function\"==typeof Symbol&&\"symbol\"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&\"function\"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?\"symbol\":typeof e})(e)}function o(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function u(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}function i(e,t,r){return t&&u(e.prototype,t),r&&u(e,r),e}function c(e,t){return!t||\"object\"!==n(t)&&\"function\"!=typeof t?f(e):t}function f(e){if(void 0===e)throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");return e}function a(e){return(a=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function l(e,t){if(\"function\"!=typeof t&&null!==t)throw new TypeError(\"Super expression must either be null or a function\");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&p(e,t)}function p(e,t){return(p=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function s(r){return function(n){function u(){var e;return o(this,u),(e=c(this,a(u).call(this))).state={loading:!0,redirect:!1},e}return l(u,e.Component),i(u,[{key:\"componentDidMount\",value:function(){var e=this;fetch(\"/checkToken\").then(function(t){if(200!==t.status){var r=new Error(t.error);throw r}e.setState({loading:!1})}).catch(function(t){console.error(t),e.setState({loading:!1,redirect:!0})})}},{key:\"render\",value:function(){var n=this.state,o=n.loading,u=n.redirect;return o?null:u?e.default.createElement(t.Redirect,{to:\"/login\"}):e.default.createElement(e.default.Fragment,null,e.default.createElement(r,this.props))}}]),u}()}"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 0 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 13 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 20 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 35 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 43 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 56 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 57 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 64 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 68 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 76 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 84 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 86 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 90 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 92 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 94 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 102 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 112 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 114 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 122 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 142 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 151 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 153 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 156 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 159 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 162 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 164 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 175 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 182 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 184 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 188 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 190 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 193 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 196 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 202 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 204 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 208 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 212 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 217 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 219 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 222 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 229 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 239 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 254 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 259 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 261 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 264 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 265 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 269 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 271 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 278 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 294 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 301 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 326 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 333 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 358 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 360 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 363 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 366 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 368 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 373 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 375 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 379 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 386 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 401 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 403 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 405 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 408 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 410 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 413 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 415 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 418 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 425 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 427 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 435 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 437 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 439 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 448 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 450 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 453 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 460 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 462 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 481 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 489 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 506 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 513 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 522 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 531 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 534 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 548 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 551 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 560 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 563 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 570 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 573 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 592 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 600 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 602 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 616 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 624 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 628 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 635 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 645 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 661 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 665 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 668 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 677 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 679 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 681 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 684 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 689 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 702 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 705 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 711 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 715 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 725 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 762 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 771 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 773 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 775 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 778 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 782 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 786 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 788 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 790 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 792 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 794 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 801 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 805 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 806 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 810 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 812 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 814 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 817 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 819 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 830 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 832 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 845 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 847 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 849 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 863 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 865 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 875 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 879 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 881 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 891 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 894 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 901 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 916 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 918 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 920 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 924 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 928 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 937 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 939 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 941 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 943 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 946 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 953 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 956 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 958 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 960 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 970 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 973 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 976 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 978 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 980 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 983 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 985 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 994 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 996 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 998 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1001 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1008 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1011 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1022 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1024 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1028 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1047 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1049 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1051 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1054 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1056 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1065 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1067 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1070 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1078 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1082 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1084 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1090 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1094 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1109 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1170 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1177 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1179 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1188 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1190 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1193 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1200 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1202 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1209 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1224 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1231 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1246 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1255 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1258 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1265 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1267 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1278 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1285 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1300 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1305 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1308 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1317 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1319 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1321 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1324 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1327 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1346 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1349 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1356 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1358 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1364 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1368 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1378 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1432 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1434 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1444 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1451 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1458 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1461 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1463 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1473 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1474 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1486 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1487 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1493 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1495 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1505 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1507 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1521 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1526 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1529 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1531 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1533 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1536 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1545 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1547 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1549 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1552 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1559 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1561 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1568 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1584 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1593 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1595 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1598 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1605 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1607 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1617 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1619 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1623 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 47, "column": 1 },
+          "generated": { "line": 1, "column": 1625 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 4, "column": 15 },
+          "generated": { "line": 1, "column": 1628 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "withAuth",
+          "original": { "line": 4, "column": 24 },
+          "generated": { "line": 1, "column": 1637 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "ComponentToProtect",
+          "original": { "line": 4, "column": 33 },
+          "generated": { "line": 1, "column": 1639 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1642 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1649 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1658 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1661 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1670 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1674 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1678 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1680 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1687 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1689 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1694 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 7, "column": 6 },
+          "generated": { "line": 1, "column": 1698 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 7, "column": 6 },
+          "generated": { "line": 1, "column": 1700 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 7, "column": 6 },
+          "generated": { "line": 1, "column": 1702 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 7, "column": 6 },
+          "generated": { "line": 1, "column": 1707 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 7, "column": 6 },
+          "generated": { "line": 1, "column": 1709 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 7, "column": 6 },
+          "generated": { "line": 1, "column": 1712 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 7, "column": 6 },
+          "generated": { "line": 1, "column": 1717 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "state",
+          "original": { "line": 8, "column": 11 },
+          "generated": { "line": 1, "column": 1725 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 8, "column": 19 },
+          "generated": { "line": 1, "column": 1731 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 9, "column": 8 },
+          "generated": { "line": 1, "column": 1732 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 9, "column": 17 },
+          "generated": { "line": 1, "column": 1741 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "redirect",
+          "original": { "line": 10, "column": 8 },
+          "generated": { "line": 1, "column": 1743 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 10, "column": 18 },
+          "generated": { "line": 1, "column": 1753 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 6, "column": 18 },
+          "generated": { "line": 1, "column": 1756 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1758 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1765 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1767 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "Component",
+          "original": { "line": 5, "column": 23 },
+          "generated": { "line": 1, "column": 1769 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1771 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1782 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1784 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1786 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1787 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1788 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 1792 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 14, "column": 24 },
+          "generated": { "line": 1, "column": 1812 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 14, "column": 24 },
+          "generated": { "line": 1, "column": 1818 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 14, "column": 24 },
+          "generated": { "line": 1, "column": 1829 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 14, "column": 24 },
+          "generated": { "line": 1, "column": 1833 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 14, "column": 24 },
+          "generated": { "line": 1, "column": 1835 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "fetch",
+          "original": { "line": 15, "column": 6 },
+          "generated": { "line": 1, "column": 1840 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 15, "column": 12 },
+          "generated": { "line": 1, "column": 1846 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "then",
+          "original": { "line": 16, "column": 9 },
+          "generated": { "line": 1, "column": 1861 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 16, "column": 14 },
+          "generated": { "line": 1, "column": 1866 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "res",
+          "original": { "line": 16, "column": 14 },
+          "generated": { "line": 1, "column": 1875 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "res",
+          "original": { "line": 17, "column": 14 },
+          "generated": { "line": 1, "column": 1878 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 17, "column": 29 },
+          "generated": { "line": 1, "column": 1881 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "res",
+          "original": { "line": 17, "column": 14 },
+          "generated": { "line": 1, "column": 1887 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "status",
+          "original": { "line": 17, "column": 18 },
+          "generated": { "line": 1, "column": 1889 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 19, "column": 17 },
+          "generated": { "line": 1, "column": 1896 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "error",
+          "original": { "line": 20, "column": 18 },
+          "generated": { "line": 1, "column": 1897 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "error",
+          "original": { "line": 20, "column": 18 },
+          "generated": { "line": 1, "column": 1901 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 20, "column": 26 },
+          "generated": { "line": 1, "column": 1903 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "Error",
+          "original": { "line": 20, "column": 30 },
+          "generated": { "line": 1, "column": 1907 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "res",
+          "original": { "line": 20, "column": 36 },
+          "generated": { "line": 1, "column": 1913 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "error",
+          "original": { "line": 20, "column": 40 },
+          "generated": { "line": 1, "column": 1915 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "error",
+          "original": { "line": 21, "column": 18 },
+          "generated": { "line": 1, "column": 1922 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "error",
+          "original": { "line": 21, "column": 18 },
+          "generated": { "line": 1, "column": 1928 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 18, "column": 12 },
+          "generated": { "line": 1, "column": 1930 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "setState",
+          "original": { "line": 18, "column": 17 },
+          "generated": { "line": 1, "column": 1932 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 18, "column": 26 },
+          "generated": { "line": 1, "column": 1941 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 18, "column": 28 },
+          "generated": { "line": 1, "column": 1942 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 18, "column": 37 },
+          "generated": { "line": 1, "column": 1951 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "catch",
+          "original": { "line": 25, "column": 9 },
+          "generated": { "line": 1, "column": 1957 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 25, "column": 15 },
+          "generated": { "line": 1, "column": 1963 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "err",
+          "original": { "line": 25, "column": 15 },
+          "generated": { "line": 1, "column": 1972 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "console",
+          "original": { "line": 26, "column": 10 },
+          "generated": { "line": 1, "column": 1975 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "error",
+          "original": { "line": 26, "column": 18 },
+          "generated": { "line": 1, "column": 1983 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "err",
+          "original": { "line": 26, "column": 24 },
+          "generated": { "line": 1, "column": 1989 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 27, "column": 10 },
+          "generated": { "line": 1, "column": 1992 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "setState",
+          "original": { "line": 27, "column": 15 },
+          "generated": { "line": 1, "column": 1994 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 27, "column": 24 },
+          "generated": { "line": 1, "column": 2003 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 27, "column": 26 },
+          "generated": { "line": 1, "column": 2004 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 27, "column": 35 },
+          "generated": { "line": 1, "column": 2013 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "redirect",
+          "original": { "line": 27, "column": 42 },
+          "generated": { "line": 1, "column": 2015 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 27, "column": 52 },
+          "generated": { "line": 1, "column": 2025 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 2033 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 2034 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 2038 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 32, "column": 13 },
+          "generated": { "line": 1, "column": 2047 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 32, "column": 13 },
+          "generated": { "line": 1, "column": 2053 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 33, "column": 36 },
+          "generated": { "line": 1, "column": 2064 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 33, "column": 36 },
+          "generated": { "line": 1, "column": 2068 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 33, "column": 36 },
+          "generated": { "line": 1, "column": 2070 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "state",
+          "original": { "line": 33, "column": 41 },
+          "generated": { "line": 1, "column": 2075 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 33, "column": 14 },
+          "generated": { "line": 1, "column": 2081 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 33, "column": 14 },
+          "generated": { "line": 1, "column": 2083 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 33, "column": 14 },
+          "generated": { "line": 1, "column": 2085 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "redirect",
+          "original": { "line": 33, "column": 23 },
+          "generated": { "line": 1, "column": 2093 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "redirect",
+          "original": { "line": 33, "column": 23 },
+          "generated": { "line": 1, "column": 2095 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "redirect",
+          "original": { "line": 33, "column": 23 },
+          "generated": { "line": 1, "column": 2097 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 34, "column": 10 },
+          "generated": { "line": 1, "column": 2106 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "loading",
+          "original": { "line": 34, "column": 10 },
+          "generated": { "line": 1, "column": 2113 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 35, "column": 15 },
+          "generated": { "line": 1, "column": 2115 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "redirect",
+          "original": { "line": 37, "column": 10 },
+          "generated": { "line": 1, "column": 2120 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 15 },
+          "generated": { "line": 1, "column": 2122 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 16 },
+          "generated": { "line": 1, "column": 2124 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 16 },
+          "generated": { "line": 1, "column": 2132 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 16 },
+          "generated": { "line": 1, "column": 2146 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 15 },
+          "generated": { "line": 1, "column": 2148 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 15 },
+          "generated": { "line": 1, "column": 2157 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 25 },
+          "generated": { "line": 1, "column": 2158 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 38, "column": 28 },
+          "generated": { "line": 1, "column": 2161 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 41, "column": 8 },
+          "generated": { "line": 1, "column": 2172 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 41, "column": 9 },
+          "generated": { "line": 1, "column": 2174 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 41, "column": 9 },
+          "generated": { "line": 1, "column": 2182 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 41, "column": 9 },
+          "generated": { "line": 1, "column": 2196 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 41, "column": 8 },
+          "generated": { "line": 1, "column": 2198 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 41, "column": 15 },
+          "generated": { "line": 1, "column": 2206 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 42, "column": 10 },
+          "generated": { "line": 1, "column": 2215 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 42, "column": 10 },
+          "generated": { "line": 1, "column": 2220 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 42, "column": 11 },
+          "generated": { "line": 1, "column": 2222 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 42, "column": 11 },
+          "generated": { "line": 1, "column": 2230 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 42, "column": 11 },
+          "generated": { "line": 1, "column": 2244 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 42, "column": 34 },
+          "generated": { "line": 1, "column": 2246 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "name": "props",
+          "original": { "line": 42, "column": 39 },
+          "generated": { "line": 1, "column": 2251 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 2263 }
+        },
+        {
+          "source": "withAuth.jsx",
+          "original": { "line": 5, "column": 2 },
+          "generated": { "line": 1, "column": 2265 }
+        }
+      ],
+      "sources": {
+        "withAuth.jsx": "import React, { Component } from 'react';\nimport { Redirect } from 'react-router-dom';\n\nexport default function withAuth(ComponentToProtect) {\n  return class extends Component {\n    constructor() {\n      super();\n      this.state = {\n        loading: true,\n        redirect: false,\n      };\n    }\n\n    componentDidMount() {\n      fetch('/checkToken')\n        .then(res => {\n          if (res.status === 200) {\n            this.setState({ loading: false });\n          } else {\n            const error = new Error(res.error);\n            throw error;\n            console.log(error);\n          }\n        })\n        .catch(err => {\n          console.error(err);\n          this.setState({ loading: false, redirect: true });\n        });\n    }\n\n\n    render() {\n      const { loading, redirect } = this.state;\n      if (loading) {\n        return null;\n      }\n      if (redirect) {\n        return <Redirect to=\"/login\" />;\n      }\n      return (\n        <React.Fragment>\n          <ComponentToProtect {...this.props} />\n        </React.Fragment>\n      );\n    }\n  }\n}\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "5efe275ff7247f10be2f4f306c490f8f",
+  "cacheData": { "env": {} }
+}

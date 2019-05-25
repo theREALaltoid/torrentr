@@ -1,0 +1,18 @@
+{
+  "id": "6s8z",
+  "dependencies": [
+    {
+      "name": "/home/zach/github/torrentr/src/frontend/index.js",
+      "dynamic": true,
+      "resolved": "/home/zach/github/torrentr/src/frontend/index.js",
+      "parent": "/home/zach/github/torrentr/src/frontend/index.html"
+    }
+  ],
+  "generated": {
+    "html": "<html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"><title>Parcel React Example</title></head><body> <div id=\"root\"></div> <script src=\"/168726dbe96b3ce427e7fedce31bb0bc.js\"></script> </body></html>"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "3ca502d34d7930b7a28f37216c82e51b",
+  "cacheData": {}
+}

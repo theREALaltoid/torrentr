@@ -1,0 +1,3112 @@
+{
+  "id": "/GT9",
+  "dependencies": [
+    {
+      "name": "/home/zach/github/torrentr/.babelrc",
+      "includedInParent": true,
+      "mtime": 1556437238995
+    },
+    {
+      "name": "/home/zach/github/torrentr/package.json",
+      "includedInParent": true,
+      "mtime": 1558808566892
+    },
+    {
+      "name": "react",
+      "loc": { "line": 1, "column": 18 },
+      "parent": "/home/zach/github/torrentr/pi/frontend/Settings.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/react/index.js"
+    },
+    {
+      "name": "prop-types",
+      "loc": { "line": 2, "column": 22 },
+      "parent": "/home/zach/github/torrentr/pi/frontend/Settings.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/prop-types/index.js"
+    },
+    {
+      "name": "./checkboxesData",
+      "loc": { "line": 3, "column": 23 },
+      "parent": "/home/zach/github/torrentr/pi/frontend/Settings.jsx",
+      "resolved": "/home/zach/github/torrentr/pi/frontend/checkboxesData.js"
+    },
+    {
+      "name": "./checkboxTemplate",
+      "loc": { "line": 4, "column": 21 },
+      "parent": "/home/zach/github/torrentr/pi/frontend/Settings.jsx",
+      "resolved": "/home/zach/github/torrentr/pi/frontend/checkboxTemplate.js"
+    },
+    {
+      "name": "react-dom",
+      "loc": { "line": 5, "column": 23 },
+      "parent": "/home/zach/github/torrentr/pi/frontend/Settings.jsx",
+      "resolved": "/home/zach/github/torrentr/node_modules/react-dom/index.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";Object.defineProperty(exports,\"__esModule\",{value:!0}),exports.default=void 0;var e=u(require(\"react\")),t=u(require(\"prop-types\")),n=u(require(\"./checkboxesData\")),r=u(require(\"./checkboxTemplate\"));function u(e){return e&&e.__esModule?e:{default:e}}function o(e){return(o=\"function\"==typeof Symbol&&\"symbol\"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&\"function\"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?\"symbol\":typeof e})(e)}function a(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function l(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,\"value\"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function i(e,t,n){return t&&l(e.prototype,t),n&&l(e,n),e}function c(e,t){return!t||\"object\"!==o(t)&&\"function\"!=typeof t?h(e):t}function f(e){return(f=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function h(e){if(void 0===e)throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");return e}function p(e,t){if(\"function\"!=typeof t&&null!==t)throw new TypeError(\"Super expression must either be null or a function\");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&s(e,t)}function s(e,t){return(s=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function b(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}var m=require(\"react-dom\"),d=[],y=function(t){function n(e){var t;return a(this,n),b(h(t=c(this,f(n).call(this,e))),\"handleInputChange\",function(e){var n=e.target,r=n.value,u=n.name;t.setState(b({},u,r))}),b(h(t),\"onSubmit\",function(e){console.log(t.state),e.preventDefault(),fetch(\"/api/settings\",{method:\"PUT\",body:JSON.stringify(t.state),headers:{\"Content-Type\":\"application/json\"}})}),t.state={IPAddress:\"\",Twilionumber:\"\",phoneNumber:\"\",AuthID:\"\",authToken:\"\"},t}return p(n,e.default.Component),i(n,[{key:\"componentDidMount\",value:function(){var e=this;fetch(\"/api/settings\").then(function(e){return e.json()}).then(function(t){console.log(t.IPAddress),e.setState({Twilionumber:t.Twilionumber,phoneNumber:t.phoneNumber,AuthID:t.AuthID,authToken:t.authToken})})}},{key:\"render\",value:function(){return e.default.createElement(\"form\",{onSubmit:this.onSubmit},e.default.createElement(\"h1\",null,\"Enter Settings Below!\"),e.default.createElement(\"input\",{type:\"Twilionumber\",name:\"Twilionumber\",placeholder:\"Enter Twilio Number\",value:this.state.Twilionumber,onChange:this.handleInputChange,required:!0}),e.default.createElement(\"br\",null),e.default.createElement(\"br\",null),e.default.createElement(\"input\",{type:\"phoneNumber\",name:\"phoneNumber\",placeholder:\"Enter Phone Number\",value:this.state.phoneNumber,onChange:this.handleInputChange,required:!0}),e.default.createElement(\"br\",null),e.default.createElement(\"br\",null),e.default.createElement(\"input\",{type:\"AuthID\",name:\"AuthID\",placeholder:\"Enter AuthID\",value:this.state.AuthID,onChange:this.handleInputChange,required:!0}),e.default.createElement(\"br\",null),e.default.createElement(\"br\",null),e.default.createElement(\"input\",{type:\"authToken\",name:\"authToken\",placeholder:\"Enter authToken\",value:this.state.authToken,onChange:this.handleInputChange,required:!0}),e.default.createElement(\"br\",null),e.default.createElement(\"br\",null),e.default.createElement(\"input\",{id:\"button\",type:\"submit\",value:\"Submit\"}))}}]),n}();exports.default=y;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 0 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 13 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 20 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 35 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 43 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 56 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 57 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 64 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 68 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 76 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 89 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 91 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 95 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 97 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 99 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 107 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 117 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 119 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 121 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 2, "column": 0 },
+          "generated": { "line": 1, "column": 129 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 144 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 146 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 148 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 3, "column": 0 },
+          "generated": { "line": 1, "column": 156 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 177 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 179 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 181 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 4, "column": 0 },
+          "generated": { "line": 1, "column": 189 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 212 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 221 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 223 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 226 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 233 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 236 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 238 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 249 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 251 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 252 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 260 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 263 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 272 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 274 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 277 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 284 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 286 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 305 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 313 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 330 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 337 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 346 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 355 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 358 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 372 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 375 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 384 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 387 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 394 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 397 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 416 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 424 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 426 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 440 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 448 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 452 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 459 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 469 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 485 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 489 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 492 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 501 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 503 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 505 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 508 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 513 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 526 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 529 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 535 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 539 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 549 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 586 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 595 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 597 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 599 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 602 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 606 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 610 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 612 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 614 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 616 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 618 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 625 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 629 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 630 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 634 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 636 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 638 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 641 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 643 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 654 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 656 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 669 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 671 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 673 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 687 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 689 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 699 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 703 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 705 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 715 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 718 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 725 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 740 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 742 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 744 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 748 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 752 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 761 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 763 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 765 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 767 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 770 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 777 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 780 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 782 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 784 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 794 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 797 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 800 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 802 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 804 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 807 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 809 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 818 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 820 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 822 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 825 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 832 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 835 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 846 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 848 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 852 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 871 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 873 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 875 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 878 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 880 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 889 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 891 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 894 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 901 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 903 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 910 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 925 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 932 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 947 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 956 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 959 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 966 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 968 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 979 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 986 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1001 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1006 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1009 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1018 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1020 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1023 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1031 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1035 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1037 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1043 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1047 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1062 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1123 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1130 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1132 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1141 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1143 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1145 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1148 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1151 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1170 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1173 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1180 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1182 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1188 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1192 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1202 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1256 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1258 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1268 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1275 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1282 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1285 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1287 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1297 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1298 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1310 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1311 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1317 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1319 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1329 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1331 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1345 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1350 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1353 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1355 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1357 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1360 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1369 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1371 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1373 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1376 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1383 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1385 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1392 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1408 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1417 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1419 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1422 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1429 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1431 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1441 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1443 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1447 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1449 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1452 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1461 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1463 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1465 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1467 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1470 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1477 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1482 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1484 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1491 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1506 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1508 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1510 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1511 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1517 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1519 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1531 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1533 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1547 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1549 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1559 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1563 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1565 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1568 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1570 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 5, "column": 0 },
+          "generated": { "line": 1, "column": 1572 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "ReactDOM",
+          "original": { "line": 5, "column": 4 },
+          "generated": { "line": 1, "column": 1576 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "require",
+          "original": { "line": 5, "column": 15 },
+          "generated": { "line": 1, "column": 1578 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 5, "column": 23 },
+          "generated": { "line": 1, "column": 1586 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "urlArr",
+          "original": { "line": 6, "column": 4 },
+          "generated": { "line": 1, "column": 1599 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 6, "column": 13 },
+          "generated": { "line": 1, "column": 1601 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Settings",
+          "original": { "line": 8, "column": 21 },
+          "generated": { "line": 1, "column": 1604 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1606 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 1615 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 9, "column": 14 },
+          "generated": { "line": 1, "column": 1618 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 9, "column": 14 },
+          "generated": { "line": 1, "column": 1627 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 9, "column": 14 },
+          "generated": { "line": 1, "column": 1629 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1632 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1636 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1638 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1645 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1647 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 1652 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 34, "column": 22 },
+          "generated": { "line": 1, "column": 1655 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 34, "column": 22 },
+          "generated": { "line": 1, "column": 1657 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1659 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1661 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1663 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1668 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1670 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1673 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1678 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "props",
+          "original": { "line": 10, "column": 10 },
+          "generated": { "line": 1, "column": 1683 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 34, "column": 22 },
+          "generated": { "line": 1, "column": 1688 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 34, "column": 22 },
+          "generated": { "line": 1, "column": 1708 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "event",
+          "original": { "line": 34, "column": 22 },
+          "generated": { "line": 1, "column": 1717 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "event",
+          "original": { "line": 35, "column": 28 },
+          "generated": { "line": 1, "column": 1720 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "event",
+          "original": { "line": 35, "column": 28 },
+          "generated": { "line": 1, "column": 1724 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "event",
+          "original": { "line": 35, "column": 28 },
+          "generated": { "line": 1, "column": 1726 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "target",
+          "original": { "line": 35, "column": 34 },
+          "generated": { "line": 1, "column": 1728 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "value",
+          "original": { "line": 35, "column": 12 },
+          "generated": { "line": 1, "column": 1735 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "value",
+          "original": { "line": 35, "column": 12 },
+          "generated": { "line": 1, "column": 1737 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "value",
+          "original": { "line": 35, "column": 12 },
+          "generated": { "line": 1, "column": 1739 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "name",
+          "original": { "line": 35, "column": 19 },
+          "generated": { "line": 1, "column": 1745 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "name",
+          "original": { "line": 35, "column": 19 },
+          "generated": { "line": 1, "column": 1747 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "name",
+          "original": { "line": 35, "column": 19 },
+          "generated": { "line": 1, "column": 1749 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "setState",
+          "original": { "line": 36, "column": 9 },
+          "generated": { "line": 1, "column": 1754 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "setState",
+          "original": { "line": 36, "column": 9 },
+          "generated": { "line": 1, "column": 1756 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "name",
+          "original": { "line": 37, "column": 7 },
+          "generated": { "line": 1, "column": 1765 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "name",
+          "original": { "line": 37, "column": 7 },
+          "generated": { "line": 1, "column": 1767 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "name",
+          "original": { "line": 37, "column": 7 },
+          "generated": { "line": 1, "column": 1770 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "value",
+          "original": { "line": 37, "column": 14 },
+          "generated": { "line": 1, "column": 1772 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 41, "column": 13 },
+          "generated": { "line": 1, "column": 1778 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 41, "column": 13 },
+          "generated": { "line": 1, "column": 1780 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 41, "column": 13 },
+          "generated": { "line": 1, "column": 1782 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 41, "column": 13 },
+          "generated": { "line": 1, "column": 1785 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 41, "column": 13 },
+          "generated": { "line": 1, "column": 1796 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "event",
+          "original": { "line": 41, "column": 13 },
+          "generated": { "line": 1, "column": 1805 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "console",
+          "original": { "line": 42, "column": 4 },
+          "generated": { "line": 1, "column": 1808 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "log",
+          "original": { "line": 42, "column": 12 },
+          "generated": { "line": 1, "column": 1816 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 42, "column": 16 },
+          "generated": { "line": 1, "column": 1820 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 42, "column": 21 },
+          "generated": { "line": 1, "column": 1822 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "event",
+          "original": { "line": 43, "column": 4 },
+          "generated": { "line": 1, "column": 1829 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "preventDefault",
+          "original": { "line": 43, "column": 10 },
+          "generated": { "line": 1, "column": 1831 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "fetch",
+          "original": { "line": 44, "column": 4 },
+          "generated": { "line": 1, "column": 1848 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 44, "column": 10 },
+          "generated": { "line": 1, "column": 1854 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 44, "column": 27 },
+          "generated": { "line": 1, "column": 1870 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "method",
+          "original": { "line": 45, "column": 6 },
+          "generated": { "line": 1, "column": 1871 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 45, "column": 14 },
+          "generated": { "line": 1, "column": 1878 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "body",
+          "original": { "line": 46, "column": 6 },
+          "generated": { "line": 1, "column": 1884 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "JSON",
+          "original": { "line": 46, "column": 12 },
+          "generated": { "line": 1, "column": 1889 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "stringify",
+          "original": { "line": 46, "column": 17 },
+          "generated": { "line": 1, "column": 1894 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 46, "column": 27 },
+          "generated": { "line": 1, "column": 1904 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 46, "column": 32 },
+          "generated": { "line": 1, "column": 1906 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "headers",
+          "original": { "line": 47, "column": 6 },
+          "generated": { "line": 1, "column": 1913 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 47, "column": 15 },
+          "generated": { "line": 1, "column": 1921 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 48, "column": 24 },
+          "generated": { "line": 1, "column": 1922 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 48, "column": 24 },
+          "generated": { "line": 1, "column": 1937 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 11, "column": 9 },
+          "generated": { "line": 1, "column": 1961 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 11, "column": 9 },
+          "generated": { "line": 1, "column": 1963 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 11, "column": 17 },
+          "generated": { "line": 1, "column": 1969 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "IPAddress",
+          "original": { "line": 12, "column": 6 },
+          "generated": { "line": 1, "column": 1970 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 12, "column": 17 },
+          "generated": { "line": 1, "column": 1980 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Twilionumber",
+          "original": { "line": 13, "column": 6 },
+          "generated": { "line": 1, "column": 1983 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 13, "column": 20 },
+          "generated": { "line": 1, "column": 1996 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "phoneNumber",
+          "original": { "line": 14, "column": 6 },
+          "generated": { "line": 1, "column": 1999 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 14, "column": 19 },
+          "generated": { "line": 1, "column": 2011 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "AuthID",
+          "original": { "line": 15, "column": 6 },
+          "generated": { "line": 1, "column": 2014 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 15, "column": 14 },
+          "generated": { "line": 1, "column": 2021 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "authToken",
+          "original": { "line": 16, "column": 6 },
+          "generated": { "line": 1, "column": 2024 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 16, "column": 17 },
+          "generated": { "line": 1, "column": 2034 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 9, "column": 21 },
+          "generated": { "line": 1, "column": 2038 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2040 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2047 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2049 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "React",
+          "original": { "line": 8, "column": 38 },
+          "generated": { "line": 1, "column": 2051 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2053 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2061 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2072 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2074 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2076 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2077 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2078 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2082 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 19, "column": 22 },
+          "generated": { "line": 1, "column": 2102 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 19, "column": 22 },
+          "generated": { "line": 1, "column": 2108 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 19, "column": 22 },
+          "generated": { "line": 1, "column": 2119 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 19, "column": 22 },
+          "generated": { "line": 1, "column": 2123 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 19, "column": 22 },
+          "generated": { "line": 1, "column": 2125 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "fetch",
+          "original": { "line": 20, "column": 4 },
+          "generated": { "line": 1, "column": 2130 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 20, "column": 10 },
+          "generated": { "line": 1, "column": 2136 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "then",
+          "original": { "line": 21, "column": 7 },
+          "generated": { "line": 1, "column": 2153 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 21, "column": 12 },
+          "generated": { "line": 1, "column": 2158 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "response",
+          "original": { "line": 21, "column": 12 },
+          "generated": { "line": 1, "column": 2167 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "response",
+          "original": { "line": 21, "column": 24 },
+          "generated": { "line": 1, "column": 2170 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "response",
+          "original": { "line": 21, "column": 24 },
+          "generated": { "line": 1, "column": 2177 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "json",
+          "original": { "line": 21, "column": 33 },
+          "generated": { "line": 1, "column": 2179 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "then",
+          "original": { "line": 23, "column": 7 },
+          "generated": { "line": 1, "column": 2188 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 23, "column": 12 },
+          "generated": { "line": 1, "column": 2193 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "user",
+          "original": { "line": 23, "column": 12 },
+          "generated": { "line": 1, "column": 2202 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "console",
+          "original": { "line": 24, "column": 8 },
+          "generated": { "line": 1, "column": 2205 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "log",
+          "original": { "line": 24, "column": 16 },
+          "generated": { "line": 1, "column": 2213 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "user",
+          "original": { "line": 24, "column": 20 },
+          "generated": { "line": 1, "column": 2217 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "IPAddress",
+          "original": { "line": 24, "column": 25 },
+          "generated": { "line": 1, "column": 2219 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 25, "column": 8 },
+          "generated": { "line": 1, "column": 2230 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "setState",
+          "original": { "line": 25, "column": 13 },
+          "generated": { "line": 1, "column": 2232 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 25, "column": 22 },
+          "generated": { "line": 1, "column": 2241 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Twilionumber",
+          "original": { "line": 26, "column": 10 },
+          "generated": { "line": 1, "column": 2242 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "user",
+          "original": { "line": 26, "column": 24 },
+          "generated": { "line": 1, "column": 2255 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Twilionumber",
+          "original": { "line": 26, "column": 29 },
+          "generated": { "line": 1, "column": 2257 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "phoneNumber",
+          "original": { "line": 27, "column": 10 },
+          "generated": { "line": 1, "column": 2270 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "user",
+          "original": { "line": 27, "column": 23 },
+          "generated": { "line": 1, "column": 2282 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "phoneNumber",
+          "original": { "line": 27, "column": 28 },
+          "generated": { "line": 1, "column": 2284 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "AuthID",
+          "original": { "line": 28, "column": 10 },
+          "generated": { "line": 1, "column": 2296 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "user",
+          "original": { "line": 28, "column": 18 },
+          "generated": { "line": 1, "column": 2303 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "AuthID",
+          "original": { "line": 28, "column": 23 },
+          "generated": { "line": 1, "column": 2305 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "authToken",
+          "original": { "line": 29, "column": 10 },
+          "generated": { "line": 1, "column": 2312 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "user",
+          "original": { "line": 29, "column": 21 },
+          "generated": { "line": 1, "column": 2322 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "authToken",
+          "original": { "line": 29, "column": 26 },
+          "generated": { "line": 1, "column": 2324 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2340 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2341 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 2345 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 53, "column": 11 },
+          "generated": { "line": 1, "column": 2354 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 53, "column": 11 },
+          "generated": { "line": 1, "column": 2360 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2371 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2378 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2380 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2388 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2402 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2409 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 12 },
+          "generated": { "line": 1, "column": 2410 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 22 },
+          "generated": { "line": 1, "column": 2419 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "onSubmit",
+          "original": { "line": 55, "column": 27 },
+          "generated": { "line": 1, "column": 2424 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 56, "column": 8 },
+          "generated": { "line": 1, "column": 2434 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2436 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2444 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2458 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2463 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2468 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 57, "column": 8 },
+          "generated": { "line": 1, "column": 2493 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 57, "column": 8 },
+          "generated": { "line": 1, "column": 2495 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 57, "column": 8 },
+          "generated": { "line": 1, "column": 2503 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 57, "column": 8 },
+          "generated": { "line": 1, "column": 2517 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 57, "column": 8 },
+          "generated": { "line": 1, "column": 2525 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 58, "column": 10 },
+          "generated": { "line": 1, "column": 2526 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 58, "column": 15 },
+          "generated": { "line": 1, "column": 2531 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 59, "column": 10 },
+          "generated": { "line": 1, "column": 2546 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 59, "column": 15 },
+          "generated": { "line": 1, "column": 2551 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 60, "column": 10 },
+          "generated": { "line": 1, "column": 2566 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 60, "column": 22 },
+          "generated": { "line": 1, "column": 2578 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 61, "column": 10 },
+          "generated": { "line": 1, "column": 2600 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 61, "column": 17 },
+          "generated": { "line": 1, "column": 2606 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 61, "column": 22 },
+          "generated": { "line": 1, "column": 2611 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Twilionumber",
+          "original": { "line": 61, "column": 28 },
+          "generated": { "line": 1, "column": 2617 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 62, "column": 10 },
+          "generated": { "line": 1, "column": 2630 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 62, "column": 20 },
+          "generated": { "line": 1, "column": 2639 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "handleInputChange",
+          "original": { "line": 62, "column": 25 },
+          "generated": { "line": 1, "column": 2644 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 63, "column": 10 },
+          "generated": { "line": 1, "column": 2662 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 63, "column": 18 },
+          "generated": { "line": 1, "column": 2672 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 65, "column": 8 },
+          "generated": { "line": 1, "column": 2676 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2678 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2686 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2700 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2705 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 66, "column": 8 },
+          "generated": { "line": 1, "column": 2711 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2713 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2721 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2735 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2740 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 67, "column": 8 },
+          "generated": { "line": 1, "column": 2746 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 67, "column": 8 },
+          "generated": { "line": 1, "column": 2748 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 67, "column": 8 },
+          "generated": { "line": 1, "column": 2756 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 67, "column": 8 },
+          "generated": { "line": 1, "column": 2770 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 67, "column": 8 },
+          "generated": { "line": 1, "column": 2778 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 68, "column": 10 },
+          "generated": { "line": 1, "column": 2779 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 68, "column": 15 },
+          "generated": { "line": 1, "column": 2784 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 69, "column": 10 },
+          "generated": { "line": 1, "column": 2798 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 69, "column": 15 },
+          "generated": { "line": 1, "column": 2803 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 70, "column": 10 },
+          "generated": { "line": 1, "column": 2817 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 70, "column": 22 },
+          "generated": { "line": 1, "column": 2829 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 71, "column": 10 },
+          "generated": { "line": 1, "column": 2850 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 71, "column": 17 },
+          "generated": { "line": 1, "column": 2856 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 71, "column": 22 },
+          "generated": { "line": 1, "column": 2861 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "phoneNumber",
+          "original": { "line": 71, "column": 28 },
+          "generated": { "line": 1, "column": 2867 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 72, "column": 10 },
+          "generated": { "line": 1, "column": 2879 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 72, "column": 20 },
+          "generated": { "line": 1, "column": 2888 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "handleInputChange",
+          "original": { "line": 72, "column": 25 },
+          "generated": { "line": 1, "column": 2893 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 73, "column": 10 },
+          "generated": { "line": 1, "column": 2911 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 73, "column": 18 },
+          "generated": { "line": 1, "column": 2921 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 75, "column": 8 },
+          "generated": { "line": 1, "column": 2925 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2927 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2935 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2949 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2954 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 76, "column": 8 },
+          "generated": { "line": 1, "column": 2960 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2962 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2970 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2984 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 2989 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 77, "column": 8 },
+          "generated": { "line": 1, "column": 2995 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 77, "column": 8 },
+          "generated": { "line": 1, "column": 2997 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 77, "column": 8 },
+          "generated": { "line": 1, "column": 3005 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 77, "column": 8 },
+          "generated": { "line": 1, "column": 3019 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 77, "column": 8 },
+          "generated": { "line": 1, "column": 3027 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 78, "column": 10 },
+          "generated": { "line": 1, "column": 3028 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 78, "column": 15 },
+          "generated": { "line": 1, "column": 3033 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 79, "column": 10 },
+          "generated": { "line": 1, "column": 3042 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 79, "column": 15 },
+          "generated": { "line": 1, "column": 3047 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 80, "column": 10 },
+          "generated": { "line": 1, "column": 3056 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 80, "column": 22 },
+          "generated": { "line": 1, "column": 3068 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 81, "column": 10 },
+          "generated": { "line": 1, "column": 3083 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 81, "column": 17 },
+          "generated": { "line": 1, "column": 3089 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 81, "column": 22 },
+          "generated": { "line": 1, "column": 3094 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "AuthID",
+          "original": { "line": 81, "column": 28 },
+          "generated": { "line": 1, "column": 3100 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 82, "column": 10 },
+          "generated": { "line": 1, "column": 3107 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 82, "column": 20 },
+          "generated": { "line": 1, "column": 3116 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "handleInputChange",
+          "original": { "line": 82, "column": 25 },
+          "generated": { "line": 1, "column": 3121 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 83, "column": 10 },
+          "generated": { "line": 1, "column": 3139 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 83, "column": 18 },
+          "generated": { "line": 1, "column": 3149 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 85, "column": 8 },
+          "generated": { "line": 1, "column": 3153 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3155 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3163 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3177 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3182 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 86, "column": 8 },
+          "generated": { "line": 1, "column": 3188 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3190 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3198 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3212 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3217 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3223 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3225 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3233 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3247 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 87, "column": 8 },
+          "generated": { "line": 1, "column": 3255 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 88, "column": 10 },
+          "generated": { "line": 1, "column": 3256 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 88, "column": 15 },
+          "generated": { "line": 1, "column": 3261 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 89, "column": 10 },
+          "generated": { "line": 1, "column": 3273 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 89, "column": 15 },
+          "generated": { "line": 1, "column": 3278 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 90, "column": 10 },
+          "generated": { "line": 1, "column": 3290 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 90, "column": 22 },
+          "generated": { "line": 1, "column": 3302 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 91, "column": 10 },
+          "generated": { "line": 1, "column": 3320 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 91, "column": 17 },
+          "generated": { "line": 1, "column": 3326 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "state",
+          "original": { "line": 91, "column": 22 },
+          "generated": { "line": 1, "column": 3331 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "authToken",
+          "original": { "line": 91, "column": 28 },
+          "generated": { "line": 1, "column": 3337 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 92, "column": 10 },
+          "generated": { "line": 1, "column": 3347 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 92, "column": 20 },
+          "generated": { "line": 1, "column": 3356 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "handleInputChange",
+          "original": { "line": 92, "column": 25 },
+          "generated": { "line": 1, "column": 3361 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 93, "column": 10 },
+          "generated": { "line": 1, "column": 3379 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 93, "column": 18 },
+          "generated": { "line": 1, "column": 3389 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 95, "column": 8 },
+          "generated": { "line": 1, "column": 3393 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3395 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3403 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3417 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3422 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 96, "column": 8 },
+          "generated": { "line": 1, "column": 3428 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3430 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3438 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3452 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 55, "column": 6 },
+          "generated": { "line": 1, "column": 3457 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 8 },
+          "generated": { "line": 1, "column": 3463 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 8 },
+          "generated": { "line": 1, "column": 3465 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 8 },
+          "generated": { "line": 1, "column": 3473 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 8 },
+          "generated": { "line": 1, "column": 3487 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 8 },
+          "generated": { "line": 1, "column": 3495 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 15 },
+          "generated": { "line": 1, "column": 3496 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 18 },
+          "generated": { "line": 1, "column": 3499 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 27 },
+          "generated": { "line": 1, "column": 3508 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 32 },
+          "generated": { "line": 1, "column": 3513 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 41 },
+          "generated": { "line": 1, "column": 3522 }
+        },
+        {
+          "source": "Settings.jsx",
+          "original": { "line": 98, "column": 47 },
+          "generated": { "line": 1, "column": 3528 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 3544 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 3546 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 3549 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 3557 }
+        },
+        {
+          "source": "Settings.jsx",
+          "name": "Component",
+          "original": { "line": 8, "column": 44 },
+          "generated": { "line": 1, "column": 3565 }
+        }
+      ],
+      "sources": {
+        "Settings.jsx": "import React from \"react\";\nimport PropTypes from \"prop-types\";\nimport checkboxes from \"./checkboxesData\";\nimport Checkbox from \"./checkboxTemplate\";\nvar ReactDOM = require(\"react-dom\");\nvar urlArr = [];\n\nexport default class Settings extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      IPAddress: \"\",\n      Twilionumber: \"\",\n      phoneNumber: \"\",\n      AuthID: \"\",\n      authToken: \"\"\n    };\n  }\n  componentDidMount() {\n    fetch(\"/api/settings\")\n      .then(response => response.json())\n\n      .then(user => {\n        console.log(user.IPAddress);\n        this.setState({\n          Twilionumber: user.Twilionumber,\n          phoneNumber: user.phoneNumber,\n          AuthID: user.AuthID,\n          authToken: user.authToken\n        });\n      });\n  }\n\n  handleInputChange = event => {\n    const { value, name } = event.target;\n    this.setState({\n      [name]: value\n    });\n  };\n\n  onSubmit = event => {\n    console.log(this.state);\n    event.preventDefault();\n    fetch(\"/api/settings\", {\n      method: \"PUT\",\n      body: JSON.stringify(this.state),\n      headers: {\n        \"Content-Type\": \"application/json\"\n      }\n    });\n  };\n\n  render() {\n    return (\n      <form onSubmit={this.onSubmit}>\n        <h1>Enter Settings Below!</h1>\n        <input\n          type=\"Twilionumber\"\n          name=\"Twilionumber\"\n          placeholder=\"Enter Twilio Number\"\n          value={this.state.Twilionumber}\n          onChange={this.handleInputChange}\n          required\n        />\n        <br />\n        <br />\n        <input\n          type=\"phoneNumber\"\n          name=\"phoneNumber\"\n          placeholder=\"Enter Phone Number\"\n          value={this.state.phoneNumber}\n          onChange={this.handleInputChange}\n          required\n        />\n        <br />\n        <br />\n        <input\n          type=\"AuthID\"\n          name=\"AuthID\"\n          placeholder=\"Enter AuthID\"\n          value={this.state.AuthID}\n          onChange={this.handleInputChange}\n          required\n        />\n        <br />\n        <br />\n        <input\n          type=\"authToken\"\n          name=\"authToken\"\n          placeholder=\"Enter authToken\"\n          value={this.state.authToken}\n          onChange={this.handleInputChange}\n          required\n        />\n        <br />\n        <br />\n\n        <input id=\"button\" type=\"submit\" value=\"Submit\" />\n      </form>\n    );\n  }\n}\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "e6b1ac44d3fe3cccbe2528e8e811747e",
+  "cacheData": { "env": {} }
+}
