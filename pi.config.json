@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "torrentr",
+      "script": "npm",
+      "args": "run pi-start"
+    }
+  ]
+}
