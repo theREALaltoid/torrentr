@@ -55,7 +55,7 @@ app.patch("/api/urls", withAuth, function(req, res) {
     if (err) {
       return console.log(err);
     } else {
-      res.status(200).send("cool");
+      res.status(200).send("We're Good");
       console.log("The file was saved!");
     }
   });
