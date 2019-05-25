@@ -3,7 +3,7 @@
     {
       "name": "torrentr",
       "script": "npm",
-      "args": "run pi-start"
+      "args": "run start"
     }
   ]
 }
