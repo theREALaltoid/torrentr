@@ -17,6 +17,10 @@ To use Torrentr just run `npm install pm2@latest -g`, `npm install` and then, de
 There are two versions of torrentr. The main version uses mongoDB and the pi version just uses a JSON file to store values. The difference between the two versions is the pi version's webserver isn't password protected and the webserver doesn't fetch stored credentials to be served to the user. 
 
 
+****EXAMPLE TEXT****
+
+![alt text](https://raw.githubusercontent.com/theREALaltoid/torrentr/master/MSG-EXAMPLE.jpeg)
+
 ****CONTRIBUTING****
 
 Just make a fork with the changes. :) 
